@@ -1,1 +1,1 @@
-web: gunicorn wedding-booking-by-salmz.wsgi
+web: gunicorn codestar.wsgi
