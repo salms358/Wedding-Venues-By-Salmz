@@ -1,0 +1,1 @@
+web: gunicorn wedding-booking-by-salmz.wsgi
