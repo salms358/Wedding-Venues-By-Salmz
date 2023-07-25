@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <h1>Booking Details</h1>
+    <p>Date: {{ booking.date }}</p>
+    <p>Customer Name: {{ booking.customer_name }}</p>
+    <p>Email: {{ booking.email }}</p>
+    <p>Phone Number: {{ booking.phone_number }}</p>
+    <p>Booking Name: {{ booking.name }}</p>
+    <p>Capacity: {{ booking.capacity }}</p>
+    <!-- Add more booking details as needed -->
+</body>
+</html>
+{% endblock %}

@@ -14,11 +14,19 @@ class UserProfile(models.Model):
     client_email = models.CharField(max_length=50)
 
 
+def __str__(self):
+    return str(self.user)
+
+
 class Bookings(models.Model):
-    venue = models.ForeignKey(Venue, on_delete=models.CASCADE)
+    venue = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     date = models.DateField()
     customer_name = models.CharField(max_length=100)
     email = models.EmailField()
     phone_number = models.CharField(max_length=11)
     name = models.CharField(max_length=25)
     capacity = models.IntegerField
+
+
+class Meta:
+    ordering = ['-booking_date']
